@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+七月
+{#解析数据必须在模板中加上双花括号#}
+{# jinja2的注释使用 #}
+{# jinja2被称为模板语言 #}
+    {{data.age}}
+    {# 如果要使用if 或者for in 必须放入单括号加上两个% if % if的结尾必须用endif#}
+    {% if data.age >7 %}
+        {{ data.name}}
+    {% elif data.age==7 %}
+        {{ data.age }}
+    {% else %}
+        {{ data.name}}
+    {% endif %}
+
+</body>
+</html>
